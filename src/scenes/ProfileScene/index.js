@@ -4,7 +4,7 @@ import { Profile } from '../../component/Profile'
 import { getPopularFeedPhoto, getUserFeedPhoto, getUserInfo } from '../../utilities'
 import { styles } from './style'
 
-export class ProfileScene extends Component {
+class _ProfileScene extends Component {
   static propTypes = {
   }
   
@@ -21,6 +21,7 @@ export class ProfileScene extends Component {
       popularFeedPhoto: {},
       isLoading       : false
     }
+    console.info('props~~~~~~', props)
   }
   
   componentDidMount() {
@@ -33,7 +34,12 @@ export class ProfileScene extends Component {
       const userInfo         = await getUserInfo()
       const userFeedPhoto    = await getUserFeedPhoto()
       const popularFeedPhoto = await getPopularFeedPhoto()
-      this.setState({ userInfo, userFeedPhoto, popularFeedPhoto}, () => this.setState({ isLoading: false }))
+      
+      this.props.setUserInfo(userInfo)
+      this.props.setUserFeed(userFeedPhoto)
+      this.props.setPopularFeed(popularFeedPhoto)
+      
+      this.setState({ isLoading: false })
     } catch (e) {
       this.setState({ isLoading: false })
       console.info('error~~', e)
@@ -54,17 +60,11 @@ export class ProfileScene extends Component {
   renderContent() {
     const {
       isLoading,
-      userInfo,
-      userFeedPhoto,
-      popularFeedPhoto
     } = this.state
     if (!isLoading) {
       return (
         <Profile
           {...this.props}
-          userInfo={userInfo}
-          userFeedPhoto={userFeedPhoto}
-          popularFeedPhoto={popularFeedPhoto}
         />
       )
     }
@@ -79,3 +79,7 @@ export class ProfileScene extends Component {
     )
   }
 }
+
+import userContainer from './../../redux/containers'
+const ProfileScene = userContainer(_ProfileScene)
+export default ProfileScene

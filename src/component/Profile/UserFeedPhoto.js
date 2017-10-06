@@ -61,7 +61,7 @@ export class UserFeedPhoto extends Component {
           containerCustomStyle={styles.slider}
           contentContainerCustomStyle={styles.sliderContentContainer}
           loop={true}
-          loopClonesPerSide={2}
+          loopClonesPerSide={3}
           autoplay={false}
           autoplayDelay={500}
           autoplayInterval={3000}

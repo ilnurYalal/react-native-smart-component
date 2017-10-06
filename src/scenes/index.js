@@ -1,1 +1,1 @@
-export { ProfileScene } from './ProfileScene'
+export { default as ProfileScene } from './ProfileScene'

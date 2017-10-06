@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native'
-import { Routing } from './src/routing'
+import { App } from './src/app'
 
-AppRegistry.registerComponent('SmartComponent', () => Routing)
+AppRegistry.registerComponent('SmartComponent', () => App)
