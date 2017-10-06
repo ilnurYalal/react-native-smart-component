@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PopularFeedPhoto renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexWrap": "wrap",
+        "height": 450,
+      },
+      Object {
+        "height": 100,
+      },
+    ]
+  }
+>
+  <View />
+</View>
+`;
+
+exports[`Profile renders correctly 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "paddingTop": 10,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "black",
+          "borderBottomWidth": 1,
+          "flexDirection": "row",
+          "paddingHorizontal": 15,
+          "paddingVertical": 10,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 45,
+            "height": 90,
+            "width": 90,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "marginLeft": 15,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "black",
+              "fontSize": 16,
+              "fontWeight": "bold",
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "marginTop": 10,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 583.6,
+        }
+      }
+    >
+      <View />
+      <View />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "flexWrap": "wrap",
+            "height": 450,
+          },
+          Object {
+            "height": 100,
+          },
+        ]
+      }
+    >
+      <View />
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`UserFeedPhoto renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "height": 583.6,
+    }
+  }
+>
+  <View />
+  <View />
+</View>
+`;
+
+exports[`UserInfo renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "borderBottomColor": "black",
+      "borderBottomWidth": 1,
+      "flexDirection": "row",
+      "paddingHorizontal": 15,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": undefined,
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 45,
+        "height": 90,
+        "width": 90,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginLeft": 15,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "black",
+          "fontSize": 16,
+          "fontWeight": "bold",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginTop": 10,
+        }
+      }
+    />
+  </View>
+</View>
+`;

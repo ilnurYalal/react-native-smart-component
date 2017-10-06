@@ -1,13 +1,14 @@
 import 'react-native'
 import React from 'react'
-import { App } from '../src/app'
+import { ProfileScene } from './../../../scenes'
+import { store } from './../../../redux/store'
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer'
 
-it('renders correctly', () => {
+it('ProfileScene renders correctly', () => {
   const tree = renderer.create(
-    <App />
+    <ProfileScene store={store}/>
   ).toJSON()
   expect(tree).toMatchSnapshot()
 })

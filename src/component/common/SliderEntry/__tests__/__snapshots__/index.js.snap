@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  collapsable={undefined}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 533.6,
+      "opacity": 1,
+      "paddingBottom": 18,
+      "paddingHorizontal": 15,
+      "width": 592.5,
+    }
+  }
+  testID={undefined}
+  tvParallaxProperties={undefined}
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 8,
+        "flex": 1,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "",
+        }
+      }
+      style={
+        Object {
+          "borderRadius": 8,
+          "bottom": 0,
+          "flex": 1,
+          "left": 0,
+          "position": "absolute",
+          "resizeMode": "cover",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "bottom": 0,
+          "height": 8,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;

@@ -1,13 +1,13 @@
 import 'react-native'
 import React from 'react'
-import { App } from '../src/app'
+import { SliderEntry } from './../../SliderEntry'
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer'
 
 it('renders correctly', () => {
   const tree = renderer.create(
-    <App />
+    <SliderEntry data={{ thumbnail: '' }}/>
   ).toJSON()
   expect(tree).toMatchSnapshot()
 })

@@ -16,12 +16,8 @@ class _ProfileScene extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      userInfo        : {},
-      userFeedPhoto   : {},
-      popularFeedPhoto: {},
-      isLoading       : false
+      isLoading: false
     }
-    console.info('props~~~~~~', props)
   }
   
   componentDidMount() {
@@ -58,14 +54,10 @@ class _ProfileScene extends Component {
   }
   
   renderContent() {
-    const {
-      isLoading,
-    } = this.state
+    const { isLoading } = this.state
     if (!isLoading) {
       return (
-        <Profile
-          {...this.props}
-        />
+        <Profile {...this.props} />
       )
     }
   }
