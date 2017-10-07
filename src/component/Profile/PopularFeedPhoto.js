@@ -11,7 +11,7 @@ export class PopularFeedPhoto extends Component {
     }
   }
   
-  onPressPopularItem = (index) => {
+  onPressPopularItem = index => {
     const { popularFeedPhoto } = this.state
     alert(popularFeedPhoto.posts[index].objectId)
   }
@@ -27,7 +27,7 @@ export class PopularFeedPhoto extends Component {
     )
   }
   
-  renderContent() {
+  renderContent = () => {
     const { popularFeedPhoto } = this.state
     if (popularFeedPhoto.posts) {
       return popularFeedPhoto.posts.map((item, index) => {

@@ -24,6 +24,7 @@ export const apiConnection = (url, body = '', method = 'GET', token = '') => {
   return new Promise(async (resolve, reject) => {
     const onSuccess = async (response) => {
       if (response.status >= 200 && response.status <= 300) {
+        
         // const fetchResult = await response.json();
         let data = await response.text()
         if (Platform.OS === 'android') {

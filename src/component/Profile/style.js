@@ -14,9 +14,9 @@ export const styles = StyleSheet.create({
     paddingVertical: 10
   },
   userPhoto: {
-    width         : 90,
-    height        : 90,
-    borderRadius  : 45,
+    width       : 90,
+    height      : 90,
+    borderRadius: 45,
   },
   userInfoSubContainer: {
     flex      : 1,
@@ -55,8 +55,8 @@ export const styles = StyleSheet.create({
   sliderContentContainer: {
   },
   popularFeedPhotoContainer: {
-    flexWrap       : 'wrap',
-    height: 450
+    flexWrap: 'wrap',
+    height  : 450
   },
   popularImage: {
     width           : (WINDOW_WIDTH - 15) / 3,

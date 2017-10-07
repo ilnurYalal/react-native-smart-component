@@ -1,6 +1,8 @@
 import { createAction } from 'redux-actions'
 
-// create Actions
+/**
+ * create Actions
+ */
 export const SET_USERINFO = 'SET_USERINFO'
 const setUserInfo$ = createAction(SET_USERINFO)
 export const setUserInfo = userInfo => dispatch => dispatch(setUserInfo$(userInfo))

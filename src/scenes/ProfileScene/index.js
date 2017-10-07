@@ -24,7 +24,7 @@ class _ProfileScene extends Component {
     this.onGetInfo()
   }
   
-  async onGetInfo() {
+  onGetInfo = async () => {
     this.setState({ isLoading: true })
     try {
       const userInfo         = await getUserInfo()
@@ -42,7 +42,7 @@ class _ProfileScene extends Component {
     }
   }
   
-  renderLoading() {
+  renderLoading = () => {
     const { isLoading } = this.state
     if (isLoading) {
       return (
@@ -53,7 +53,7 @@ class _ProfileScene extends Component {
     }
   }
   
-  renderContent() {
+  renderContent = () => {
     const { isLoading } = this.state
     if (!isLoading) {
       return (

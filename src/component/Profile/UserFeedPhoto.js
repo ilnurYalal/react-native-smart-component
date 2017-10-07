@@ -17,7 +17,7 @@ export class UserFeedPhoto extends Component {
     }
   }
   
-  onSetRef = (ref) => {
+  onSetRef = ref => {
     
     const { sliderRef } = this.state
     if (!sliderRef) {
@@ -42,7 +42,7 @@ export class UserFeedPhoto extends Component {
     )
   }
   
-  renderContent() {
+  renderContent = () => {
     const { userFeedPhoto } = this.state
     
     if (userFeedPhoto.posts) {
@@ -72,7 +72,7 @@ export class UserFeedPhoto extends Component {
     return <View />
   }
   
-  renderPagination() {
+  renderPagination = () => {
     const { userFeedPhoto, sliderActiveSlide , sliderRef} = this.state
   
     if (userFeedPhoto.posts) {

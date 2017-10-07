@@ -3,5 +3,5 @@ import { ProfileScene } from './scenes'
 
 export const Routing = StackNavigator({
   initialRouteName: { screen: ProfileScene },
-  Profile: { screen: ProfileScene }
+  Profile         : { screen: ProfileScene }
 })

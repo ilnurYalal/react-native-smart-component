@@ -5,9 +5,9 @@ const entryBorderRadius = 8
 
 export const styles = StyleSheet.create({
   imageContainer: {
-    flex                : 1,
-    backgroundColor     : 'white',
-    borderRadius: entryBorderRadius
+    flex           : 1,
+    backgroundColor: 'white',
+    borderRadius   : entryBorderRadius
   },
   image: {
     ...StyleSheet.absoluteFillObject,
@@ -19,14 +19,13 @@ export const styles = StyleSheet.create({
     width            : ITEM_WIDTH,
     height           : SLIDE_HEIGHT,
     paddingHorizontal: ITEM_HORIZONTAL_MARGIN,
-    paddingBottom    : 18 // needed for shadow
+    paddingBottom    : 18
   },
   radiusMask: {
-    position       : 'absolute',
-    bottom         : 0,
-    left           : 0,
-    right          : 0,
-    height         : entryBorderRadius,
-    // backgroundColor: 'white'
+    position: 'absolute',
+    bottom  : 0,
+    left    : 0,
+    right   : 0,
+    height  : entryBorderRadius
   },
 })
